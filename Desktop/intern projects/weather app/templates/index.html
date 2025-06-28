@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="{{ bg_class }}">>
+    <div class="container">
+        <h1>🌤️ Real-Time Weather</h1>
+        {% if weather %}
+        <div class="weather-card">
+            <p><strong>City:</strong> {{ weather.city }}</p>
+            <p><strong>Temperature:</strong> {{ weather.temperature }}</p>
+            <p><strong>Condition:</strong> {{ weather.description }}</p>
+            <p><strong>Humidity:</strong> {{ weather.humidity }}</p>
+            <p><strong>Wind Speed:</strong> {{ weather.wind }}</p>
+        </div>
+        {% else %}
+        <p>Could not retrieve weather data.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

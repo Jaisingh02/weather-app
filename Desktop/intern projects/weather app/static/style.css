@@ -1,0 +1,50 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease-in-out;
+}
+
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.weather-card p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #444;
+}
+
+/* Background classes */
+.clear {
+    background-image: url('/static/images/clear.jpg');
+}
+.cloudy {
+    background-image: url('/static/images/cloudy.jpg');
+}
+.rainy {
+    background-image: url('/static/images/rainy.jpg');
+}
+.snowy {
+    background-image: url('/static/images/snowy.jpg');
+}
+.stormy {
+    background-image: url('/static/images/stormy.jpg');
+}
+.default {
+    background-image: url('/static/images/default.jpg');
+}
+
